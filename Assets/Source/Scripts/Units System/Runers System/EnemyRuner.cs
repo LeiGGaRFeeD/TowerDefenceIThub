@@ -13,20 +13,13 @@ public class EnemyRuner : MonoBehaviour
     public int damage;
     void Start()
     {
-        physic = GetComponent<Rigidbody2D>();
+        castle = GameObject.FindGameObjectWithTag("Castle").GetComponent<Transform>();
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
-        if (castle.position.x < transform.position.x)
-        {
-            physic.velocity = new Vector2(-speed, 0);
-        }
-        else if (castle.position.x > transform.position.x)
-        {
-            physic.velocity = new Vector2(speed, 0);
-        }
+        transform.position = Vector3.MoveTowards(transform.position, castle.position, speed * Time.fixedDeltaTime);
 
     }
 
