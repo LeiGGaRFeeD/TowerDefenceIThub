@@ -17,7 +17,7 @@ public class EnemyRuner : MonoBehaviour
     void Start()
     {
         castle = GameObject.FindGameObjectWithTag("Castle").GetComponent<Transform>();
-        InvokeRepeating("DoDamage", 0.0f, 1.0f);
+        InvokeRepeating("DoDamage", Random.Range(0.0f, 1.0f), 1.0f);
     }
 
 
