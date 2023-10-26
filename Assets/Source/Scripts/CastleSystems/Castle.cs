@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Castle : MonoBehaviour
 {
-    [SerializeField] int Hp;
+    public int Hp;
     public Slider HealthBar;
     void Start()
     {
-        //HealthBar.value = Hp;
+        HealthBar.value = Hp;
     }
 
 
@@ -19,7 +19,7 @@ public class Castle : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        //HealthBar.value = Hp;
+        HealthBar.value = Hp;
     }
 
     public void TakeDamage(int Damage)
