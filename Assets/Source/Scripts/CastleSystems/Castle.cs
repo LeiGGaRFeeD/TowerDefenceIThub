@@ -25,6 +25,6 @@ public class Castle : MonoBehaviour
 
     public void TakeDamage(int Damage)
     {
-        Hp = Hp - Damage;
+        Hp -= Damage;
     }
 }

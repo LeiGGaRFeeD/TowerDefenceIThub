@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UnitRuner : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class UnitRuner : MonoBehaviour
     public float speed;
     public int HP;
     public int damage;
+    public Shooting shoot;
+    public Slider HealthBar;
 
 
     private bool isCollidedWithCastle = false;
@@ -18,10 +21,20 @@ public class UnitRuner : MonoBehaviour
 
     void Start()
     {
+        HealthBar.maxValue = HP;
+        HealthBar.value = HP;
         castle = GameObject.FindGameObjectWithTag("Castle").GetComponent<Transform>();
         InvokeRepeating("DoDamage", Random.Range(0.0f, 1.0f), 1.0f);
     }
 
+    void Update()
+    {
+        if (HP <= 0)
+        {
+            Destroy(gameObject);
+        }
+        HealthBar.value = HP;
+    }
 
     void FixedUpdate()
     {
@@ -34,12 +47,12 @@ public class UnitRuner : MonoBehaviour
 
     private void DoDamage()
     {
-        Debug.Log("DoDamage()");
         if (isCollidedWithCastle)
         {
             if (castleObject.Hp <= 0)
             {
                 isCollidedWithCastle = false;
+                Destroy(gameObject);
             }
             else
             {
@@ -72,6 +85,10 @@ public class UnitRuner : MonoBehaviour
         {
             isCollidedWithTower = true;
             towerObject = collision.gameObject.GetComponent<TowerShooter>();
+        }
+        if (collision.gameObject.tag == "Bullet")
+        {
+            HP -= shoot.damage;
         }
     }
 }
