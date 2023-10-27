@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyRuner : MonoBehaviour
+public class UnitRuner : MonoBehaviour
 {
     public Transform castle;
 
@@ -12,7 +12,9 @@ public class EnemyRuner : MonoBehaviour
 
 
     private bool isCollidedWithCastle = false;
+    private bool isCollidedWithTower = false;
     private Castle castleObject;
+    private TowerShooter towerObject;
 
     void Start()
     {
@@ -45,6 +47,19 @@ public class EnemyRuner : MonoBehaviour
             }
                 
         }
+
+        if (isCollidedWithTower)
+        {
+            if (towerObject.Hp <= 0)
+            {
+                isCollidedWithTower = false;
+            }
+            else
+            {
+                towerObject.TakeDamage(damage);
+            }
+
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -52,6 +67,11 @@ public class EnemyRuner : MonoBehaviour
         {
             isCollidedWithCastle = true;
             castleObject = collision.gameObject.GetComponent<Castle>();
+        }
+        if (collision.gameObject.tag == "Tower")
+        {
+            isCollidedWithTower = true;
+            towerObject = collision.gameObject.GetComponent<TowerShooter>();
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Castle : MonoBehaviour
+public class TowerShooter : MonoBehaviour
 {
     public int Hp;
     public Slider HealthBar;
