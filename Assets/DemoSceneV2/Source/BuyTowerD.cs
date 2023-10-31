@@ -21,9 +21,40 @@ public class BuyTowerD : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("moneyD") > _price)
         {
+
             PlayerPrefs.GetInt("numPlace");
             PlayerPrefs.SetInt("moneyD", PlayerPrefs.GetInt("money") - _priceToBuy);
             Instantiate(_tower, _towerPlace[_num].transform);
+        }
+    }
+    void Update()
+    {
+        Debug.Log("Update is working");
+        Debug.Log("MoneyD = "+ PlayerPrefs.GetInt("moneyD"));
+
+        if (PlayerPrefs.GetInt("moneyD") > _price)
+        {
+            if (Input.GetKeyUp(KeyCode.Alpha1))
+            {
+            Debug.Log("Clicked first button");
+                PlayerPrefs.SetInt("moneyD", PlayerPrefs.GetInt("money") - _priceToBuy);
+                Instantiate(_tower, _towerPlace[0].transform);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha2))
+            {
+                PlayerPrefs.SetInt("moneyD", PlayerPrefs.GetInt("money") - _priceToBuy);
+                Instantiate(_tower, _towerPlace[1].transform);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha3))
+            {
+                PlayerPrefs.SetInt("moneyD", PlayerPrefs.GetInt("money") - _priceToBuy);
+                Instantiate(_tower, _towerPlace[2].transform);
+            }
+            if (Input.GetKeyUp(KeyCode.Alpha4))
+            {
+                PlayerPrefs.SetInt("moneyD", PlayerPrefs.GetInt("money") - _priceToBuy);
+                Instantiate(_tower, _towerPlace[3].transform);
+            }
         }
     }
 }
