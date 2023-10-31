@@ -1,18 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnWallD : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject _tower;
+    [SerializeField] private GameObject[] _towerPlace;
+    private int _num;
 
-    // Update is called once per frame
-    void Update()
+    public void Spawn()
     {
-        
+        _num = PlayerPrefs.GetInt("_towerPlace");
+        Instantiate(_tower, _towerPlace[_num].transform);
     }
 }

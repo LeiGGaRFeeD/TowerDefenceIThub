@@ -8,17 +8,17 @@ public class EnemyD : MonoBehaviour
     [SerializeField]private int _damage;
     [SerializeField] private float _reoeatRate;
     [SerializeField] private int _moneyPlus;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<BaseD>())
+        if (collision.GetComponent<BaseD>() == true )
         {
             InvokeRepeating("DestWhenEnd", 0, _time);
             InvokeRepeating("DeletingHealth", 0, _reoeatRate);
+        }
+        if (collision.GetComponent<WallD>() == true)
+        {
+
         }
     }
     void DestWhenEnd()
@@ -35,9 +35,5 @@ public class EnemyD : MonoBehaviour
         PlayerPrefs.SetInt("healthD", PlayerPrefs.GetInt("healthD") - _damage);
         PlayerPrefs.SetInt("moneyD", PlayerPrefs.GetInt("moneyD") + _moneyPlus);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
