@@ -19,6 +19,7 @@ public class Castle : MonoBehaviour
         if (Hp <= 0)
         {
             Destroy(gameObject);
+            Time.timeScale = 0f;
         }
         HealthBar.value = Hp;
     }

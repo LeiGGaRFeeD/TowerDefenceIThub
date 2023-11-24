@@ -24,6 +24,7 @@ public class UnitRuner : MonoBehaviour
         HealthBar.maxValue = HP;
         HealthBar.value = HP;
         castle = GameObject.FindGameObjectWithTag("Castle").GetComponent<Transform>();
+        shoot = GameObject.FindGameObjectWithTag("Shooter").GetComponent<Shooting>();
         InvokeRepeating("DoDamage", Random.Range(0.0f, 1.0f), 1.0f);
     }
 

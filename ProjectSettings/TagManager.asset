@@ -8,6 +8,8 @@ TagManager:
   - Tower
   - Unit
   - Bullet
+  - Shooter
+  - WinPanel
   layers:
   - Default
   - TransparentFX

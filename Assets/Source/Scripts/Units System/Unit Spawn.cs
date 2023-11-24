@@ -7,12 +7,9 @@ using static UnityEngine.UI.CanvasScaler;
 
 public class UnitSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject Unit;
-    [SerializeField] Transform Spawnpoint;
-//    public Vector2 pos = Spawnpoint.transform.position;
-
-    public void Spawn()
+    public void Spawn(GameObject UnitPrefab)
     {
-        Instantiate(Unit, Spawnpoint);
+        GameObject unit = Instantiate(UnitPrefab);
+        unit.transform.position = transform.position;
     }
 }
