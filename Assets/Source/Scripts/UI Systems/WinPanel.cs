@@ -5,7 +5,7 @@ using UnityEngine;
 public class WinPanel : MonoBehaviour
 {
     [SerializeField] GameObject WinhPanel;
-    public Castle castle;
+    Castle castle;
 
     void Start()
     {
