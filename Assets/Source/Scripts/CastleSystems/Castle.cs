@@ -7,10 +7,12 @@ public class Castle : MonoBehaviour
 {
     public int Hp;
     public Slider HealthBar;
+    public WinPanel _winPanel;
     void Start()
     {
         HealthBar.maxValue = Hp;
         HealthBar.value = Hp;
+        _winPanel = GameObject.FindGameObjectWithTag("WinManager").GetComponent<WinPanel>();
     }
 
 
@@ -19,7 +21,7 @@ public class Castle : MonoBehaviour
         if (Hp <= 0)
         {
             Destroy(gameObject);
-            Time.timeScale = 0f;
+            _winPanel.Win();
         }
         HealthBar.value = Hp;
     }

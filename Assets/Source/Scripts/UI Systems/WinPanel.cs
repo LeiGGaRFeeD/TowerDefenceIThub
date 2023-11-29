@@ -5,22 +5,9 @@ using UnityEngine;
 public class WinPanel : MonoBehaviour
 {
     [SerializeField] GameObject WinhPanel;
-    Castle castle;
 
-    void Start()
+    public void Win()
     {
-        castle = GameObject.FindGameObjectWithTag("Castle").GetComponent<Castle>();
-    }
-
-    public void Update()
-    {
-        if (castle.Hp == 0)
-        {
-            WinhPanel.SetActive(true);
-        }
-        else
-        {
-            WinhPanel.SetActive(false);
-        }
+        WinhPanel.SetActive(true);
     }
 }
