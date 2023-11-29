@@ -772,8 +772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc2710e629d58e4fa6e49b88cc91174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Unit: {fileID: 5757986466114439682, guid: dd942fa7960d0ff4288552b40bcd9692, type: 3}
-  Spawnpoint: {fileID: 846495338}
 --- !u!114 &1022787709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,7 +1403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045c889fecdafcd44a9664aef242cef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneNum: 0
 --- !u!114 &1727290676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1861,11 +1858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3699092326939204636, guid: 86f316f9c438bea48975e1856c8640ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.02
+      value: -9.61
       objectReference: {fileID: 0}
     - target: {fileID: 3699092326939204636, guid: 86f316f9c438bea48975e1856c8640ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: -8.91
       objectReference: {fileID: 0}
     - target: {fileID: 3699092326939204636, guid: 86f316f9c438bea48975e1856c8640ed, type: 3}
       propertyPath: m_LocalPosition.z

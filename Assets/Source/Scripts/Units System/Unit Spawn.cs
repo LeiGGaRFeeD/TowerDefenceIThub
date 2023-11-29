@@ -5,17 +5,41 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.UI.CanvasScaler;
 
+public enum UnitType
+{
+    Runer = 1,
+    Flyer = 2,
+    Shooter = 3
+}
+
 public class UnitSpawn : MonoBehaviour
 {
     // ƒŒœ»—¿“‹!!!!
-    MoneySouls souls;
-    private void Start()
+    public MoneySouls souls;
+    public UnitType _unitType;
+    private int price;
+    void Start()
     {
-        souls = GameObject.FindGameObjectWithTag("MoneySoulsManager").GetComponent<MoneySouls>();
+        if (_unitType == UnitType.Runer)
+        {
+            price = 10;
+        }
+        if (_unitType == UnitType.Flyer)
+        {
+            price = 30;
+        }
+        if (_unitType == UnitType.Shooter)
+        {
+            price = 50;
+        }
     }
     public void Spawn(GameObject UnitPrefab)
     {
-        GameObject unit = Instantiate(UnitPrefab);
-        unit.transform.position = transform.position;
+        if (price <= souls.Souls)
+        {
+            GameObject unit = Instantiate(UnitPrefab);
+            unit.transform.position = transform.position;
+            souls.Souls -= price;
+        }
     }
 }
