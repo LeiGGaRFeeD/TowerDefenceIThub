@@ -12,6 +12,12 @@ TagManager:
   - WinPanel
   - MoneySoulsManager
   - WinManager
+  - UnitFlyerTengu
+  - UnitShooterHebi
+  - UnitRunerStormDragon
+  - TowerShooter
+  - TowerGreatShooter
+  - TowerKicker
   layers:
   - Default
   - TransparentFX

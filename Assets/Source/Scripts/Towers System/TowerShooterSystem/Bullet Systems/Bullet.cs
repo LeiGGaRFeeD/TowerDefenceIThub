@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Unit")
+        if (collision.gameObject.tag == "UnitFlyerTengu" || collision.gameObject.tag == "UnitShooterHebi" || collision.gameObject.tag == "UnitRunerStormDragon")
         {
             Destroy(gameObject);
         }

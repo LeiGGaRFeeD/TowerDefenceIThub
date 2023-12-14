@@ -1,10 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Sprites;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitRuner : MonoBehaviour
+public class UnitFlyer : MonoBehaviour
 {
     public Transform castle;
 
@@ -87,7 +87,6 @@ public class UnitRuner : MonoBehaviour
             else
             {
                 kicker.TakeDamage(damage);
-                HP -= kicker.Damage;
             }
 
         }

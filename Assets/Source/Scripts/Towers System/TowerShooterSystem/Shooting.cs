@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    public bool isGreatShooter;
     public float range;
     public int damage;
     private float CurrCooldown;
@@ -40,7 +41,7 @@ public class Shooting : MonoBehaviour
         Transform nearestUnit = null;
         float nearestUnitDistance = Mathf.Infinity;
 
-        foreach(GameObject unit in GameObject.FindGameObjectsWithTag("Unit"))
+        foreach(GameObject unit in GameObject.FindGameObjectsWithTag("UnitRunerStormDragon"))
         {
             float currDistance = Vector2.Distance(transform.position, unit.transform.position);
 
@@ -48,6 +49,30 @@ public class Shooting : MonoBehaviour
             {
                 nearestUnit = unit.transform;
                 nearestUnitDistance = currDistance;
+            }
+        }
+
+        foreach (GameObject unit in GameObject.FindGameObjectsWithTag("UnitShooterHebi"))
+        {
+            float currDistance = Vector2.Distance(transform.position, unit.transform.position);
+
+            if ((currDistance < nearestUnitDistance) && (currDistance <= range))
+            {
+                nearestUnit = unit.transform;
+                nearestUnitDistance = currDistance;
+            }
+        }
+
+        if (isGreatShooter == true)
+        {
+            foreach (GameObject unit in GameObject.FindGameObjectsWithTag("UnitFlyerTengu"))
+            {
+                float currDistance = Vector2.Distance(transform.position, unit.transform.position);
+                if ((currDistance < nearestUnitDistance) && (currDistance <= range))
+                {
+                    nearestUnit = unit.transform;
+                    nearestUnitDistance = currDistance;
+                }
             }
         }
 

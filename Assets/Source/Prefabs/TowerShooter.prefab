@@ -101,7 +101,7 @@ Transform:
   m_GameObject: {fileID: 4636808824280470147}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.84, y: 0.321, z: -0.090923786}
+  m_LocalPosition: {x: -0.049, y: 0.69, z: -0.090923786}
   m_LocalScale: {x: 0.53333336, y: 0.26936027, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 7169921177049337207}
   m_Layer: 0
   m_Name: TowerShooter
-  m_TagString: Tower
+  m_TagString: TowerShooter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
