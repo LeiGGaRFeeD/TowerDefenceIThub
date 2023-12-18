@@ -14,7 +14,7 @@ public enum UnitType
 
 public class UnitSpawn : MonoBehaviour
 {
-    // днохяюрэ!!!!
+    // О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!
     public MoneySouls souls;
     public UnitType _unitType;
     private int price;
@@ -37,9 +37,11 @@ public class UnitSpawn : MonoBehaviour
     {
         if (price <= souls.Souls)
         {
-            GameObject unit = Instantiate(UnitPrefab);
-            unit.transform.position = transform.position;
-            souls.Souls -= price;
+            if (PlayerPrefs.GetInt("onScreen")<8){
+                GameObject unit = Instantiate(UnitPrefab);
+                unit.transform.position = transform.position;
+                souls.Souls -= price;
+            }
         }
     }
 }
