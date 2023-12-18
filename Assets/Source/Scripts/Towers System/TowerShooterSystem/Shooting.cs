@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public bool isGreatShooter;
-    public float range;
+   [SerializeField]private bool isGreatShooter;
+    [SerializeField] private float range;
     public int damage;
     private float CurrCooldown;
-    public float Cooldown;
+    [SerializeField] private float Cooldown;
 
     [SerializeField] GameObject Projectile;
     private void Update()
