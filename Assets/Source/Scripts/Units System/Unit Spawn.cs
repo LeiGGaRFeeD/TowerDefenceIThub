@@ -15,8 +15,8 @@ public enum UnitType
 public class UnitSpawn : MonoBehaviour
 {
     // ��������!!!!
-    public MoneySouls souls;
-    public UnitType _unitType;
+    [SerializeField]private MoneySouls souls;
+    [SerializeField]private UnitType _unitType;
     private int price;
     void Start()
     {

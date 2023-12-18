@@ -489,9 +489,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
       value: TowerShooter (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099738539795756556, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: damage
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -580,7 +588,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 113793720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 348945595}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &113793720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,6 +691,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
       value: TowerShooter (10)
@@ -728,9 +752,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2073490031014825142, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
@@ -957,7 +997,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 172781142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1973080076}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &172781142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,9 +1096,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2073490031014825142, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
@@ -1385,7 +1453,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2028,9 +2096,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
       value: TowerShooter (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099738539795756556, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: damage
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2386,7 +2462,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 530426565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 350129970}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &530426565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2810,9 +2898,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14012992
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.39991558
+      objectReference: {fileID: 0}
     - target: {fileID: 2073490031014825142, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
@@ -2951,7 +3055,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 747940080}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1299708456}
+        m_TargetAssemblyTypeName: UnitSpawn, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &747940080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,7 +3124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &767565687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3495,9 +3611,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186572443729610128, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2073490031014825142, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
@@ -4273,7 +4405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1366690298
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4528,7 +4660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1444898000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5950,6 +6082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerShooter (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7099738539795756556, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6007,9 +6143,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3700511276308495544, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: Hp
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 6417921994569109743, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
       propertyPath: m_Name
       value: TowerShooter (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099738539795756556, guid: 29aad6c9a821b7a42858ec7264b524e9, type: 3}
+      propertyPath: damage
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6582,7 +6726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2089100416
 RectTransform:
   m_ObjectHideFlags: 0
