@@ -21,4 +21,8 @@ public class LevelSelect : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    public void GoToTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
