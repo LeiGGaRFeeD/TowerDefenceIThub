@@ -4,15 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UnitFlyer : MonoBehaviour
+public class Unit : MonoBehaviour
 {
     public Transform castle;
 
-    public float speed;
-    public int HP;
-    public int damage;
-    public Shooting shoot;
-    public Slider HealthBar;
+    [SerializeField] private float speed;
+    [SerializeField] private int HP;
+    [SerializeField] private int damage;
+    [SerializeField] private Shooting shoot;
+    [SerializeField] private Slider HealthBar;
 
 
     private bool isCollidedWithCastle = false;
@@ -87,6 +87,7 @@ public class UnitFlyer : MonoBehaviour
             else
             {
                 kicker.TakeDamage(damage);
+                HP -= kicker.Damage;
             }
 
         }
