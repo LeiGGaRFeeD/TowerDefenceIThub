@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 3871594522696844155}
   - component: {fileID: 3638747396651643477}
   - component: {fileID: 1496208219197569738}
-  - component: {fileID: 9085948360201756329}
+  - component: {fileID: 9049019716469572617}
   m_Layer: 0
   m_Name: UnitRuner
   m_TagString: UnitRunerStormDragon
@@ -285,7 +285,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &9085948360201756329
+--- !u!114 &9049019716469572617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3561718048096751302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 380cb745a3878864aa5e99e2b69d0626, type: 3}
+  m_Script: {fileID: 11500000, guid: b6007d0d88cc048a58ce7d7cfb6620d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   castle: {fileID: 0}
