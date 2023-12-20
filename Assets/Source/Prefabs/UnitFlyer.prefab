@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7083325880444428446}
   - component: {fileID: 556743778620327760}
   - component: {fileID: 6480510154208051797}
-  - component: {fileID: 2346367841984451096}
+  - component: {fileID: -7323076525081170844}
   m_Layer: 0
   m_Name: UnitFlyer
   m_TagString: UnitFlyerTengu
@@ -160,7 +160,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2346367841984451096
+--- !u!114 &-7323076525081170844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635947935217051844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac4bb92a48a04784db04e8d5bec9bcf4, type: 3}
+  m_Script: {fileID: 11500000, guid: b6007d0d88cc048a58ce7d7cfb6620d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   castle: {fileID: 0}
