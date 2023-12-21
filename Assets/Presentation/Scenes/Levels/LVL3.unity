@@ -5340,7 +5340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528c86b71e2bd1e449ff4c3e5c2ad17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Souls: 800
+  Souls: 500
 --- !u!4 &2076490029
 Transform:
   m_ObjectHideFlags: 0
