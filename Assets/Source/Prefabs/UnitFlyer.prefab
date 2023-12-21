@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7323076525081170844}
   m_Layer: 0
   m_Name: UnitFlyer
-  m_TagString: UnitFlyerTengu
+  m_TagString: UnitShooterHebi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

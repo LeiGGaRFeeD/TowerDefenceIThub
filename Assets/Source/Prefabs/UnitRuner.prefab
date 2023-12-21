@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 9049019716469572617}
   m_Layer: 0
   m_Name: UnitRuner
-  m_TagString: UnitRunerStormDragon
+  m_TagString: UnitShooterHebi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
