@@ -1729,7 +1729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d134614bfa5646848720ccec49f2f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WebGLversion: 0
+  WebGLversion: 1
   quitButton: {fileID: 1367389897}
   versionText: {fileID: 1624687823}
 --- !u!1660057539 &9223372036854775807
