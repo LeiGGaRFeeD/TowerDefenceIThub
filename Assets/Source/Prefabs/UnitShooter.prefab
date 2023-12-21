@@ -174,8 +174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castle: {fileID: 0}
   speed: 1
-  HP: 20
-  damage: 55
+  HP: 300
+  damage: 65
   shoot: {fileID: 0}
   HealthBar: {fileID: 701399511237833148}
 --- !u!1 &3339742352422496579
