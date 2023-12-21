@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5685506012003636546}
   m_Layer: 0
   m_Name: UnitShooter
-  m_TagString: UnitFlyerTengu
+  m_TagString: UnitShooterHebi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.65, y: 0.61, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6958768058430471798}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.5732355, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1b3bdfa5c008a0f44a97ecde0490af14, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -174,8 +174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castle: {fileID: 0}
   speed: 1
-  HP: 20
-  damage: 55
+  HP: 300
+  damage: 65
   shoot: {fileID: 0}
   HealthBar: {fileID: 701399511237833148}
 --- !u!1 &3339742352422496579

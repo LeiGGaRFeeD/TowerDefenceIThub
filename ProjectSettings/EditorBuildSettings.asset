@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Presentation/Scenes/Menus/Settings.unity
     guid: 0fa416c440b934c00888dd3351ee2eff
   - enabled: 1
+    path: Assets/Presentation/Scenes/Levels/Tutorial.unity
+    guid: f23ab5fcc2fb34ac7be139a664b1b8e9
+  - enabled: 1
     path: Assets/Presentation/Scenes/Menus/Authores.unity
     guid: 546743557bf0c435a95466556ff29681
   - enabled: 1
